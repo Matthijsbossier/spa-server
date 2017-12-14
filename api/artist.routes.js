@@ -3,6 +3,7 @@ var routes = express.Router();
 var mongodb = require('../config/mongo.db');
 var Artist = require('../model/artist.model');
 
+
 routes.get('/artists', function(req, res){
     res.contentType('application/json');
     Artist.find({})

@@ -5,6 +5,7 @@ var bodyParser = require('body-parser')
 var logger = require('morgan');
 var mongodb = require('./config/mongo.db');
 var artistroutes = require('./api/artist.routes');
+var userroutes = require('./api/user.routes');
 var albumroutes = require('./api/album.routes');
 var config = require('./config/env/env');
 
@@ -49,7 +50,7 @@ app.use(function (req, res, next) {
 
 // Installeer de routers.
 app.use('/api/v1', artistroutes);
-//app.use('/api/v1', albumroutes)
+//app.use('/api/v1/users', userroutes);
 
 // Errorhandler voor express-jwt errors
 // Wordt uitgevoerd wanneer err != null; anders door naar next().
@@ -75,7 +76,7 @@ app.use('*', function (req, res) {
 // Installatie klaar; start de server.
 app.listen(config.env.webPort, function () {
     console.log('De server luistert op port ' + app.get('port'));
-    console.log('Zie bijvoorbeeld http://localhost:3000/api/recipes');
+    console.log('Zie bijvoorbeeld http://localhost:3000/api/v1/artists');
 });
 
 // Voor testen met mocha/chai moeten we de app exporteren.
