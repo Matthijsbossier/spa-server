@@ -2,7 +2,7 @@
 
 Deze NodeJS server bevat een API op MongoDatabase en Neo4j-database. In een MongoDB zijn artiesten met bijbehorende subdocumenten opgeslagen. De users staan lokaal in Neo4j-browser opgeslagen.
 
-De angular-kant (frontend) staat hier: [spa-angular](https://github.com/Matthijsbossier/spa-angular)
+De angular-kant (frontend) staat hier: [spa-angular](https://github.com/Matthijsbossier/spa-angular/tree/feature-neo4j)
 
 
 
