@@ -20,4 +20,10 @@ SPA-server:
 Lokaal draait de angular-kant van de applicatie op `http://localhost:4200/`.
 
 Lokaal draait de server-kant (api)
-`http://localhost:3000/`  
+`http://localhost:3000/`
+
+In de cloud draait de angular-kant op:
+`https://spa-angular.herokuapp.com/`  
+
+In de cloud draait de server-kant op:
+`https://spa-server-db.herokuapp.com/`
